@@ -1,0 +1,29 @@
+William a. Dullemond
+3007 
+Assingment one
+
+
+
+1.We encourage you to ask questions when you're struggling to understand a concept—you can even choose to remain anonymous to your fellow students
+
+2.\x -> \y -> x >> y :: Monad m => m a -> m b -> m b
+
+3.
+
+m n = if n>100
+	then (n-10)
+	else (m (m (n+11)))
+--91 , 91 , 91
+
+
+4.
+
+pre n = n-1
+suc n = n+1
+
+add x y = if y>0
+	then add(suc(x)) (pre(y))
+	else x
+mult x y = if y > 1
+	then add (x) (mult (x) (pre(y)))
+	else x
